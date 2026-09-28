@@ -311,14 +311,6 @@ a {
   font-weight: 700;
 }
 
-.condition {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 2px dashed #1a1a1a;
-  color: #6b625c;
-  font-size: 15px;
-}
-
 .suggest-form {
   background-color: #ffffff;
   border: 3px solid #1a1a1a;
