@@ -23,7 +23,7 @@ h1, h2, h3 {
 
 .logo,
 h1,
-.section-title {
+.title {
   font-family: "Luckiest Guy", "Poppins", sans-serif;
   letter-spacing: 1px;
 }
@@ -64,7 +64,7 @@ a {
   text-decoration: none;
 }
 
-.nav-links a {
+.menu a {
   margin-left: 16px;
   font-size: 15px;
   font-weight: 600;
@@ -72,11 +72,11 @@ a {
   text-decoration: none;
 }
 
-.nav-links a:hover {
+.menu a:hover {
   color: #ff5b3e;
 }
 
-.nav-links a.active {
+.menu a.active {
   background-color: #ffd23e;
   border: 2px solid #1a1a1a;
   border-radius: 4px;
@@ -105,7 +105,7 @@ a {
 .btn {
   display: inline-block;
   background-color: #ff5b3e;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-weight: 700;
   border: 3px solid #1a1a1a;
@@ -129,11 +129,11 @@ a {
   padding: 40px 0;
 }
 
-.hero-text {
+.herotext {
   flex: 1 1 320px;
 }
 
-.hero-text h1 {
+.herotext h1 {
   font-size: 64px;
 }
 
@@ -157,7 +157,8 @@ a {
   padding: 30px 0;
 }
 
-.section-title {
+
+.title {
   font-size: 40px;
   margin-bottom: 24px;
 }
@@ -170,12 +171,12 @@ a {
 
 .card {
   flex: 1 1 240px;
-  background-color: #ffffff;
+  text-decoration: none;
+  color: #1a1a1a;
+  background-color: #fff;
   border: 3px solid #1a1a1a;
   border-radius: 10px;
   box-shadow: 6px 6px 0 #1a1a1a;
-  text-decoration: none;
-  color: #1a1a1a;
   overflow: hidden;
 }
 
@@ -192,7 +193,7 @@ a {
   border-bottom: 3px solid #1a1a1a;
 }
 
-.card-body {
+.cardtext {
   padding: 16px 20px 20px 20px;
 }
 
@@ -224,17 +225,16 @@ a {
 .note h3 {
   font-size: 22px;
 }
-
 .note p {
-  margin: 0;
+  margin: 0px;
 }
 
-.page-head {
+.intro {
   max-width: 720px;
   padding: 30px 0 10px 0;
 }
 
-.page-head h1 {
+.intro h1 {
   font-size: 52px;
 }
 
@@ -249,7 +249,7 @@ a {
   background-color: #ffffff;
   border: 3px solid #1a1a1a;
   border-radius: 10px;
-  box-shadow: 6px 6px 0 #1a1a1a;
+  box-shadow: 5px 5px 0 #1a1a1a;
   overflow: hidden;
 }
 
@@ -270,7 +270,7 @@ a {
     padding: 10px;
 }
 
-.review-body {
+.reviewbox {
   padding: 18px 22px 20px 22px;
 }
 
@@ -281,10 +281,10 @@ a {
 }
 
 .verdict {
-  color: #e6432a;
-  font-weight: 600;
-  font-style: italic;
-  margin-bottom: 14px;
+    color: #e6432a;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 14px;
 }
 
 .ratings {
@@ -311,7 +311,7 @@ a {
   font-weight: 700;
 }
 
-.suggest-form {
+.form {
   background-color: #ffffff;
   border: 3px solid #1a1a1a;
   border-radius: 10px;
@@ -321,14 +321,14 @@ a {
   margin-top: 20px;
 }
 
-.suggest-form label {
+.form label {
   display: block;
   font-weight: 600;
   margin: 14px 0 6px 0;
 }
 
-.suggest-form input,
-.suggest-form textarea {
+.form input,
+.form textarea {
   width: 100%;
   font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
@@ -339,21 +339,21 @@ a {
   padding: 10px 12px;
 }
 
-.suggest-form textarea {
+.form textarea {
   resize: vertical;
 }
 
-.suggest-form button {
+.form button {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   cursor: pointer;
 }
 
-.rules-list {
+.rules {
   padding-left: 24px;
 }
 
-.rules-list li {
+.rules li {
   background-color: #ffffff;
   border: 3px solid #1a1a1a;
   border-radius: 10px;
@@ -362,26 +362,26 @@ a {
   margin-bottom: 20px;
 }
 
-.rules-list h2 {
+.rules h2 {
   font-size: 20px;
   margin-bottom: 6px;
   text-transform: uppercase;
 }
 
-.rules-list p {
-  margin: 0;
+.rules p {
+  margin:0;
   color: #6b625c;
 }
 
 .kit {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   gap: 40px;
 }
 
 .checklist {
   flex: 1 1 320px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 3px solid #1a1a1a;
   border-radius: 10px;
   box-shadow: 6px 6px 0 #1a1a1a;
@@ -422,14 +422,14 @@ a {
   margin-bottom: 14px;
 }
 
-.about-grid {
+.about {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   margin-top: 10px;
 }
 
-.about-box {
+.infobox {
   flex: 1 1 300px;
   background-color: #ffffff;
   border: 3px solid #1a1a1a;
@@ -438,18 +438,18 @@ a {
   padding: 24px;
 }
 
-.about-box h2 {
+.infobox h2 {
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.about-box p {
+.infobox p {
   margin: 0;
   color: #6b625c;
 }
 
 .me {
-  background-color: #ffffff;
+  background-color: white;
   border: 3px solid #1a1a1a;
   border-radius: 10px;
   box-shadow: 8px 8px 0 #1a1a1a;
@@ -492,7 +492,7 @@ a {
 .footer {
   margin-top: 50px;
   padding: 24px 0 40px 0;
-  border-top: 3px solid #1a1a1a;
+  border-top: 3px solid #1A1A1A;
   color: #6b625c;
   font-size: 14px;
 }
@@ -502,11 +502,11 @@ a {
     font-size: 40px;
   }
 
-  .hero-text h1 {
+  .herotext h1 {
     font-size: 44px;
   }
 
-  .page-head h1 {
+  .intro h1 {
     font-size: 36px;
   }
 
@@ -515,7 +515,7 @@ a {
     align-items: flex-start;
   }
 
-  .nav-links a {
+  .menu a {
     margin-left: 0;
     margin-right: 14px;
   }
