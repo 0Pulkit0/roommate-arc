@@ -123,17 +123,20 @@
       <p>Know an anime character who'd be a dream to live with? Suggest them below.</p>
     </div>
 
-    <form class="form">
+    <form class="form" id="suggestForm">
+      <input type="hidden" name="_subject" value="New roommate suggestion!">
+
       <label for="name">Character name</label>
-      <input type="text" id="name" name="name" placeholder="eg - Erina Nakiri">
+      <input type="text" id="name" name="name" placeholder="eg - Erina Nakiri" required>
 
       <label for="anime">Which anime are they from?</label>
-      <input type="text" id="anime" name="anime" placeholder="eg - Food Wars">
+      <input type="text" id="anime" name="anime" placeholder="eg - Food Wars" required>
 
       <label for="why">Why would they be a good or bad roommate?</label>
-      <textarea id="why" name="why" rows="4" placeholder="keep it short and honest"></textarea>
+      <textarea id="why" name="why" rows="4" placeholder="keep it short and honest" required></textarea>
 
       <button type="submit" class="btn">Send suggestion</button>
+      <p id="formMsg" class="formmsg"></p>
     </form>
 
     <div class="intro">
@@ -187,6 +190,32 @@
   <footer class="footer container">
     <p>Roommate Arc - a web project by Pulkit</p>
   </footer>
+
+  <script>
+    const form = document.getElementById("suggestForm");
+    const msg = document.getElementById("formMsg");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const data = new FormData(form);
+
+      fetch("https://formsubmit.co/ajax/pulkitmittal0123@gmail.com", {
+        method: "POST",
+        body: data
+      })
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function () {
+          form.reset();
+          msg.textContent = "Thanks! Your suggestion has been sent.";
+        })
+        .catch(function () {
+          msg.textContent = "Something went wrong, please try again.";
+        });
+    });
+  </script>
 
 </body>
 </html>

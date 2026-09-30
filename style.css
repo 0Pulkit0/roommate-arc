@@ -349,6 +349,12 @@ a {
   cursor: pointer;
 }
 
+.formmsg {
+  margin-top: 14px;
+  font-weight: 600;
+  color: #e6432a;
+}
+
 .rules {
   padding-left: 24px;
 }
