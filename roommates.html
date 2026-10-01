@@ -207,9 +207,13 @@
         .then(function (res) {
           return res.json();
         })
-        .then(function () {
-          form.reset();
-          msg.textContent = "Thanks! Your suggestion has been sent.";
+        .then(function (data) {
+          if (data.success === "true" || data.success === true) {
+            form.reset();
+            msg.textContent = "Thanks! Your suggestion has been sent.";
+          } else {
+            msg.textContent = "Something went wrong, please try again.";
+          }
         })
         .catch(function () {
           msg.textContent = "Something went wrong, please try again.";
